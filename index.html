@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فروشگاه قاری محمد الیاس پوپل | روغن خوراکی هرات</title>
+<meta name="description" content="قیمت امروز روغن خوراکی در هرات. فروشگاه قاری محمد الیاس پوپل، مارکت خواجه محمد تاکی، درب خوش.">
+<meta name="theme-color" content="#2B4D2F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5E8; --surface:#FFFFFF; --ink:#1B2A1B; --muted:#56664F; --line:#DCE3CD;
+  --green:#2B4D2F; --on-green:#FFFFFF; --gold:#E3A41C; --on-gold:#2A1F00; --action:#2B4D2F;
+  --open:#7BD88F; --closed:#F2A65A; --warn-bg:#FFF1D0; --warn-ink:#5A3E00;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --bg:#111A11; --surface:#1A261A; --ink:#EDF2E2; --muted:#A5B29D; --line:#2C3C2C;
+    --green:#1E3A22; --action:#A9DBA9; --warn-bg:#3A2D0A; --warn-ink:#F5DFA3;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn","Noto Naskh Arabic",Tahoma,sans-serif;font-size:17px;line-height:1.75}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.1rem}
+
+/* hero */
+.hero{background:var(--green);color:var(--on-green);padding:2.6rem 0 2.2rem}
+.hero h1{margin:0;font-size:clamp(2rem,7vw,3.3rem);line-height:1.3;font-weight:800}
+.hero p{margin:.4rem 0 0;font-size:1.1rem;opacity:.9}
+.status{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.3rem;padding:.35rem .9rem;border-radius:999px;background:rgba(255,255,255,.13);font-size:.95rem}
+.dot{width:.65rem;height:.65rem;border-radius:50%;background:var(--closed)}
+.status.open .dot{background:var(--open)}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.btn{display:inline-block;padding:.65rem 1.4rem;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid transparent}
+.btn.gold{background:var(--gold);color:var(--on-gold)}
+.btn.line{border-color:rgba(255,255,255,.75);color:var(--on-green)}
+
+/* price board */
+section{padding:2rem 0 .5rem}
+h2{margin:0;font-size:1.5rem;font-weight:800}
+.board-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem 1rem}
+.date{margin:0;color:var(--muted);font-size:.92rem}
+.search{width:100%;margin:1rem 0 .4rem;padding:.7rem 1rem;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px}
+.board{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;overflow:hidden;margin-top:.8rem}
+.brand{margin:0;padding:.5rem 1rem;font-size:.95rem;font-weight:700;background:var(--bg);border-inline-start:5px solid var(--gold);color:var(--muted)}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:.7rem;padding:.8rem 1rem;border-top:1px solid var(--line)}
+.rows .row:first-child{border-top:0}
+.name{display:block;font-weight:600;line-height:1.5}
+.size{display:block;color:var(--muted);font-size:.88rem}
+.price{white-space:nowrap;font-weight:800;font-size:1.2rem}
+.price small{font-weight:400;font-size:.78rem;color:var(--muted);margin-inline-start:.25rem}
+.order{padding:.35rem .85rem;border-radius:8px;border:1.5px solid var(--action);color:var(--action);font-size:.9rem;font-weight:600;text-decoration:none}
+.order:hover{background:var(--action);color:var(--surface)}
+.row.out .name,.row.out .size{opacity:.55}
+.row.out .price{font-weight:600;font-size:.95rem;color:var(--muted);grid-column:2 / 4;text-align:end}
+.msg{padding:1.4rem 1rem;color:var(--muted);text-align:center}
+.note{font-size:.85rem;color:var(--muted);margin:.7rem 0 0}
+.demo{margin-top:.8rem;padding:.6rem 1rem;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);font-size:.9rem}
+
+/* info */
+.info{margin-top:1.2rem;border-top:1.5px solid var(--line)}
+.info>div{padding:1.4rem 0;border-bottom:1.5px solid var(--line)}
+.info h2{font-size:1.15rem;margin-bottom:.4rem}
+.info p{margin:.2rem 0}
+.hours td{padding:.1rem 0}
+.hours td:first-child{padding-inline-end:1.5rem;color:var(--muted)}
+.phones{list-style:none;margin:.3rem 0 0;padding:0}
+.phones li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;padding:.55rem 0}
+.num{direction:ltr;unicode-bidi:isolate;font-weight:600;font-size:1.1rem;letter-spacing:.02em}
+.acts{display:flex;gap:.5rem}
+.acts a,.map{padding:.4rem 1rem;border-radius:8px;border:1.5px solid var(--action);color:var(--action);font-weight:600;font-size:.92rem;text-decoration:none}
+.acts a:hover,.map:hover{background:var(--action);color:var(--surface)}
+.map{display:inline-block;margin-top:.6rem}
+footer{padding:1.6rem 0 2.4rem;color:var(--muted);font-size:.88rem;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>فروشگاه قاری محمد الیاس پوپل</h1>
+    <p>فروش روغن خوراکی در هرات</p>
+    <div class="status" id="status"><span class="dot" aria-hidden="true"></span><span id="statusText"></span></div>
+    <div class="cta">
+      <a class="btn gold" href="tel:+93797206546">تماس بگیرید</a>
+      <a class="btn line" href="https://wa.me/93797206546">پیام در واتساپ</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="prices" aria-labelledby="pricesTitle">
+    <div class="board-head">
+      <h2 id="pricesTitle">قیمت روغن‌ها</h2>
+      <p class="date" id="dateLine"></p>
+    </div>
+    <input class="search" id="q" type="search" placeholder="جستجوی محصول یا برند" aria-label="جستجوی محصول یا برند">
+    <div id="demo"></div>
+    <div class="board" id="list" aria-live="polite"><p class="msg">در حال بارگذاری قیمت‌ها…</p></div>
+    <p class="note">همه قیمت‌ها به افغانی است.</p>
+  </section>
+
+  <section class="info" aria-label="اطلاعات فروشگاه" style="padding:0">
+    <div>
+      <h2>آدرس</h2>
+      <p>مارکت خواجه محمد تاکی، درب خوش، هرات، افغانستان</p>
+      <a class="map" id="mapLink" href="#" target="_blank" rel="noopener">دیدن روی نقشه</a>
+    </div>
+    <div>
+      <h2>ساعت کاری</h2>
+      <table class="hours">
+        <tr><td>شنبه تا پنجشنبه</td><td>۸ صبح تا ۶ عصر</td></tr>
+        <tr><td>جمعه‌ها و رخصتی‌های رسمی</td><td>بسته</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>تلفن و واتساپ</h2>
+      <ul class="phones">
+        <li><span class="num">+93 797 206 546</span>
+          <span class="acts"><a href="tel:+93797206546">تماس</a><a href="https://wa.me/93797206546">واتساپ</a></span></li>
+        <li><span class="num">+93 749 740 057</span>
+          <span class="acts"><a href="tel:+93749740057">تماس</a><a href="https://wa.me/93749740057">واتساپ</a></span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>فروشگاه قاری محمد الیاس پوپل</footer>
+
+<script>
+/* ===== تنظیمات ===== */
+// لینک CSV گوگل شیت (Publish to web) را بین گیومه‌ها بگذارید.
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1lw0icDDuF5MF4Y1gZkxfsuh529xnFhpCGXhXsqgRnUw/gviz/tq?tqx=out:csv";
+// لینک دقیق فروشگاه در گوگل‌مپ را اینجا بگذارید (اختیاری).
+const MAP_URL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("مارکت خواجه محمد تاکی هرات");
+// شماره واتساپ برای دکمه «سفارش»
+const ORDER_WA = "93797206546";
+
+/* ===== نمونه (فقط تا وقتی گوگل شیت وصل نشده) ===== */
+const SAMPLE = [
+  ["روغن آفتابگردان","نمونه","۵ لیتر","1450","بلی"],
+  ["روغن آفتابگردان","نمونه","۱۸ لیتر","5200","بلی"],
+  ["روغن ذرت","نمونه","۵ لیتر","1600","بلی"],
+  ["روغن نباتی","برند دوم","۱۶ کیلو","3900","نخیر"]
+];
+
+/* ===== ابزارها ===== */
+const $ = id => document.getElementById(id);
+const norm = s => (s||"").replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d));
+function fmt(n){
+  for (const l of ["fa-AF","fa"]) { try { return new Intl.NumberFormat(l).format(n); } catch(e){} }
+  return String(n);
+}
+function parseCSV(t){
+  t = t.replace(/^\uFEFF/,"");
+  const rows=[]; let row=[], f="", q=false;
+  for (let i=0;i<t.length;i++){
+    const c=t[i];
+    if(q){ if(c==='"'){ if(t[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){ row.push(f); f=""; }
+    else if(c==='\n'||c==='\r'){ if(c==='\r'&&t[i+1]==='\n') i++; row.push(f); rows.push(row); row=[]; f=""; }
+    else f+=c;
+  }
+  if(f!==""||row.length){ row.push(f); rows.push(row); }
+  return rows;
+}
+function toProduct(r){
+  const priceRaw=(r[3]||"").trim();
+  return {
+    name:(r[0]||"").trim(), brand:(r[1]||"").trim(), size:(r[2]||"").trim(),
+    priceRaw, n:parseFloat(norm(priceRaw).replace(/[^\d.]/g,"")),
+    avail:!/^(نخیر|نه|ناموجود|no|0|false)$/i.test(norm((r[4]||"").trim()))
+  };
+}
+
+/* ===== وضعیت باز/بسته (وقت کابل) ===== */
+function updateStatus(){
+  const p=new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Kabul",weekday:"short",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(new Date());
+  const g=t=>p.find(x=>x.type===t).value;
+  const day=g("weekday"), mins=(+g("hour"))*60+(+g("minute"));
+  const open = day!=="Fri" && mins>=480 && mins<1080;
+  $("status").classList.toggle("open",open);
+  $("statusText").textContent = open ? "حالا باز است، تا ساعت ۶ عصر"
+    : day==="Fri" ? "امروز جمعه است و فروشگاه بسته است"
+    : "حالا بسته است. ساعت کاری ۸ صبح تا ۶ عصر";
+}
+const AF_MONTHS=["حمل","ثور","جوزا","سرطان","اسد","سنبله","میزان","عقرب","قوس","جدی","دلو","حوت"];
+const AF_DAYS={Sat:"شنبه",Sun:"یکشنبه",Mon:"دوشنبه",Tue:"سه‌شنبه",Wed:"چهارشنبه",Thu:"پنجشنبه",Fri:"جمعه"};
+const toFa=s=>String(s).replace(/\d/g,d=>"۰۱۲۳۴۵۶۷۸۹"[d]);
+function todayText(){
+  try{
+    const now=new Date();
+    const p=new Intl.DateTimeFormat("en-US-u-ca-persian-nu-latn",{timeZone:"Asia/Kabul",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(now);
+    const g=t=>p.find(x=>x.type===t).value;
+    const wd=new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Kabul",weekday:"short"}).format(now);
+    return AF_DAYS[wd]+" "+toFa(parseInt(g("day"),10))+" "+AF_MONTHS[parseInt(g("month"),10)-1]+" "+toFa(parseInt(g("year"),10));
+  }catch(e){ return ""; }
+}
+
+/* ===== نمایش قیمت‌ها ===== */
+let ALL=[];
+function render(){
+  const term=norm($("q").value).trim().toLowerCase();
+  const list=ALL.filter(p=>!term||(p.name+" "+p.brand+" "+p.size).toLowerCase().includes(term));
+  const box=$("list"); box.textContent="";
+  if(!list.length){ const m=document.createElement("p"); m.className="msg"; m.textContent=ALL.length?"محصولی با این نام پیدا نشد.":"فعلاً محصولی ثبت نشده است."; box.appendChild(m); return; }
+  const groups=new Map();
+  list.forEach(p=>{ const k=p.brand||"سایر"; if(!groups.has(k)) groups.set(k,[]); groups.get(k).push(p); });
+  groups.forEach((items,brand)=>{
+    const h=document.createElement("h3"); h.className="brand"; h.textContent=brand; box.appendChild(h);
+    const ul=document.createElement("ul"); ul.className="rows";
+    items.forEach(p=>{
+      const li=document.createElement("li"); li.className="row"+(p.avail?"":" out");
+      const info=document.createElement("div");
+      const nm=document.createElement("span"); nm.className="name"; nm.textContent=p.name;
+      const sz=document.createElement("span"); sz.className="size"; sz.textContent=p.size;
+      info.appendChild(nm); if(p.size) info.appendChild(sz); li.appendChild(info);
+      const pr=document.createElement("span"); pr.className="price";
+      if(!p.avail){ pr.textContent="ناموجود"; li.appendChild(pr); }
+      else {
+        if(isNaN(p.n)) pr.textContent=p.priceRaw;
+        else { pr.textContent=fmt(p.n); const u=document.createElement("small"); u.textContent="افغانی"; pr.appendChild(u); }
+        li.appendChild(pr);
+        const a=document.createElement("a"); a.className="order"; a.textContent="سفارش";
+        const msg="سلام، می‌خواهم "+[p.name,p.brand,p.size].filter(Boolean).join(" ")+" را سفارش بدهم.";
+        a.href="https://wa.me/"+ORDER_WA+"?text="+encodeURIComponent(msg);
+        li.appendChild(a);
+      }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  });
+}
+
+async function load(){
+  $("mapLink").href=MAP_URL;
+  updateStatus(); setInterval(updateStatus,60000);
+  let rows, updated="";
+  if(!SHEET_CSV_URL){
+    rows=SAMPLE;
+    const d=document.createElement("div"); d.className="demo";
+    d.textContent="این قیمت‌ها نمونه است. لینک گوگل شیت هنوز وصل نشده.";
+    $("demo").appendChild(d);
+  } else {
+    try{
+      const res=await fetch(SHEET_CSV_URL+(SHEET_CSV_URL.includes("?")?"&":"?")+"t="+Date.now());
+      if(!res.ok) throw new Error(res.status);
+      const all=parseCSV(await res.text());
+      const hasHeader = all.length && isNaN(parseFloat(norm((all[0][3]||"")).replace(/[^\d.]/g,"")));
+      rows = hasHeader ? all.slice(1) : all;
+      const withDate=rows.find(r=>(r[5]||"").trim());
+      if(withDate) updated=withDate[5].trim();
+    }catch(e){
+      $("list").innerHTML='<p class="msg">قیمت‌ها بارگذاری نشد. لطفاً با شماره‌های پایین صفحه تماس بگیرید.</p>';
+      $("dateLine").textContent=todayText();
+      return;
+    }
+  }
+  ALL=rows.filter(r=>(r[0]||"").trim()).map(toProduct);
+  $("dateLine").textContent = updated ? "آخرین بروزرسانی: "+updated : todayText();
+  render();
+}
+$("q").addEventListener("input",render);
+load();
+</script>
+</body>
+</html>
